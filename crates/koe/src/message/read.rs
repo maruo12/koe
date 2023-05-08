@@ -45,7 +45,7 @@ pub async fn build_read_text(
 fn should_read_author_name(msg: &Message, last_msg: &Option<Message>) -> bool {
     let last_msg = match last_msg {
         Some(msg) => msg,
-        None => return true,
+        None => return ,
     };
 
     msg.author != last_msg.author
